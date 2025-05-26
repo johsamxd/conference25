@@ -10,14 +10,9 @@ export default function DateContent() {
     return () => controls.stop();
   }, []);
 
-  return <motion.pre style={text}>{rounded}</motion.pre>;
+  return (
+    <motion.pre className="text-text-alternative font-sans typo-title">
+      {rounded}
+    </motion.pre>
+  );
 }
-
-/**
- * ==============   Styles   ================
- */
-
-const text = {
-  fontSize: 64,
-  color: "#8df0cc",
-};

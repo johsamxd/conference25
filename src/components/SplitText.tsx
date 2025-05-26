@@ -18,12 +18,10 @@ export default function SplitText({
     document.fonts.ready.then(() => {
       if (!containerRef.current) return;
 
-      // Hide the container until the fonts are loaded
       containerRef.current.style.visibility = "visible";
 
       const { words } = splitText(containerRef.current.querySelector(type)!);
 
-      // Animate the words in the h1
       animate(
         words,
         { opacity: [0, 1], y: [10, 0] },
@@ -38,7 +36,7 @@ export default function SplitText({
   }, []);
 
   return (
-    <div className="container" ref={containerRef}>
+    <div ref={containerRef}>
       {type == "h1" ? (
         <h1>{text}</h1>
       ) : type == "h2" ? (
@@ -46,27 +44,6 @@ export default function SplitText({
       ) : (
         <p>{text}</p>
       )}
-
-      <Stylesheet />
     </div>
-  );
-}
-
-function Stylesheet() {
-  return (
-    <style>{`
-            .container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                text-align: left;
-                visibility: hidden;
-            }
-
-            .split-word {
-                will-change: transform, opacity;
-            }
-        `}</style>
   );
 }

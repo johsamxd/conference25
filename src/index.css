@@ -19,6 +19,7 @@ body {
 }
 
 @theme {
+  --color-text-alternative: #8df0cc;
   --color-gradient-in: #00c6ff;
   --color-gradient-out: #0072ff;
   --color-background-primary: #ffffff;
