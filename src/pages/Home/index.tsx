@@ -1,11 +1,11 @@
 import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
-
 import { Header } from "./components/Header";
+import { Typewriter } from "@/components/animated/Typewriter";
 
 export function Home() {
   return (
-    <div className="flex flex-col gap-10 animated-gradient h-screen px-40">
+    <div className="flex flex-col gap-10 animated-gradient h-screen px-40 ">
       <Header />
       <div className="flex w-full text-background-secondary mt-20">
         <div className="flex flex-col gap-5 w-[50vw]">
@@ -34,7 +34,7 @@ export function Home() {
             <div className="flex flex-col gap-2.5">
               <h3>Место проведения:</h3>
               <h2 className="flex gap-2.5">
-                <SplitText text="*место проведения*" type="h2" />
+                <Typewriter text="*место проведения*" />
               </h2>
             </div>
           </div>
