@@ -1,11 +1,14 @@
+import Progress from "@/components/ui/progress";
+
 interface Props {
-  title: string;
+  data: any;
 }
 
-export function ProgramBlock({ title }: Props) {
+export function ProgramBlock({ data }: Props) {
   return (
-    <div>
-      <h3>{title}</h3>
+    <div className="p-6 rounded-3xl flex flex-col gap-5 bg-background-secondary">
+      <h3>{data.title}</h3>
+      <Progress items={data?.items} current={0} skipped={[0]} />
     </div>
   );
 }

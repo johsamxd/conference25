@@ -19,19 +19,17 @@ body {
 }
 
 @theme {
-  --color-text-alternative: #8df0cc;
-  --color-gradient-in: #00c6ff;
-  --color-gradient-out: #0072ff;
-  --color-background-primary: #ffffff;
-  --color-background-secondary: #eaeaea;
+  --color-background-primary: #f4f4f4;
+  --color-background-secondary: #ffffff;
   --color-background-tertiary: #f7f7f7;
   --color-text-primary: #161616;
   --color-text-secondary: #494949;
   --color-text-tertiary: #a1a1a1;
   --color-text-button: #ffffff;
-  --color-main-primary: #2a8c11; /* ##40ba21 */
-  --color-main-secondary: #346b21;
-  --color-main-tertiary: #e5ffde;
+  --color-text-alternative: #8df0cc;
+  --color-main-primary: #0c58a6;
+  --color-main-secondary: #598fd9;
+  --color-main-tertiary: #7fbcd9;
   --color-element-primary: #c6c7c1;
   --color-element-secondary: #5f5f5f;
   --color-element-tertiary: #535353;
@@ -43,8 +41,6 @@ body {
   --color-notify-successful-tertiary: #171a09;
   --color-notify-warning-primary: #e4a21e;
   --color-notify-warning-secondary: #b48017;
-  --color-telegram-primary: #24a1de;
-  --color-telegram-secondary: #007ba5;
 }
 
 .dark {
@@ -55,9 +51,9 @@ body {
   --color-text-secondary: #d3d2d2;
   --color-text-tertiary: #656565;
   --color-text-button: #ffffff;
-  --color-main-primary: #40ba21;
-  --color-main-secondary: #2a8c11;
-  --color-main-tertiary: #e5ffde;
+  --color-main-primary: #0c58a6;
+  --color-main-secondary: #598fd9;
+  --color-main-tertiary: #7fbcd9;
   --color-element-primary: #4c4c4c;
   --color-element-secondary: #989898;
   --color-element-tertiary: #d2d2d2;
@@ -69,8 +65,6 @@ body {
   --color-notify-successful-tertiary: #296c18;
   --color-notify-warning-primary: #e8d420;
   --color-notify-warning-secondary: #e8d420;
-  --color-telegram-primary: #24a1de;
-  --color-telegram-secondary: #007ba5;
 }
 
 @keyframes gradient-animation {
@@ -88,8 +82,8 @@ body {
 .animated-gradient {
   background: linear-gradient(
     270deg,
-    var(--color-gradient-in),
-    var(--color-gradient-out)
+    var(--color-main-primary),
+    var(--color-main-secondary)
   );
   background-size: 400% 400%;
   animation: gradient-animation 7s ease infinite;
@@ -105,7 +99,11 @@ body {
   }
 
   .typo-small-title {
-    @apply text-[16px] font-bold leading-[20px] lg:text-[18px] lg:leading-[22px];
+    @apply text-[18px] font-bold leading-[18px] lg:text-[20px] lg:leading-[20px];
+  }
+
+  .typo-sub-title {
+    @apply text-[16px] font-bold leading-[16px] lg:text-[16px] lg:leading-[18px];
   }
 
   .typo-text {
@@ -147,7 +145,7 @@ body {
   }
 
   h3 {
-    @apply text-[16px] font-bold leading-[20px] lg:text-[18px] lg:leading-[22px];
+    @apply text-[18px] font-bold leading-[18px] lg:text-[20px] lg:leading-[20px];
   }
 
   p {

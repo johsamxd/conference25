@@ -7,9 +7,6 @@ export function Header({
 }: React.HTMLProps<HTMLDivElement>) {
   return (
     <div className={cn("flex gap-2.5 items-center pt-2", className)} {...props}>
-      {/* <div className="w-40">
-        <img src="/images/logo.png" />
-      </div> */}
       <div className="w-full flex justify-center mr-14">
         <Button variant="link">Программа</Button>
         <Button variant="link">Список президиумов</Button>

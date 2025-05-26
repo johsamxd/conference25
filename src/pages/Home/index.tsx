@@ -1,6 +1,7 @@
-import DateContent from "@/components/DateContent";
-import { Header } from "@/pages/Home/components/Header";
-import SplitText from "@/components/SplitText";
+import DateContent from "@/components/animated/DateContent";
+import SplitText from "@/components/animated/SplitText";
+
+import { Header } from "./components/Header";
 
 export function Home() {
   return (
