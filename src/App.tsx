@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Header } from "./components/Header";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main>
+      {/* <div className="overflow-hidden bg-gradient-to-bl from-cyan-500 to-blue-500 h-dvh"> */}
+      <div className="flex flex-col gap-10 animated-gradient h-screen px-40">
+        <Header />
+        <div className="flex w-full text-background-secondary mt-40">
+          <div className="w-[50vw]">
+            <div className="flex flex-col gap-2.5">
+              <h1>VII Республиканская конференция «Закупки Якутии-2025»</h1>
+              <p>
+                Данное мероприятие является одной из ключевых площадок для
+                конструктивного диалога, обмена опытом и выработки стратегий
+                развития системы закупок в Республике Саха (Якутия). Ежегодно
+                конференция объединяет государственных заказчиков,
+                представителей бизнессообщества и экспертов в сфере закупок для
+                обсуждения современных вызовов и возможностей, а также поиска
+                эффективных решений для повышения прозрачности, результативности
+                и цифровизации в области закупочной деятельности.
+              </p>
+            </div>
+          </div>
+          <div className="flex w-[50vw] justify-center items-center">
+            <div className="flex flex-col gap-2.5">
+              <h1>27 июня 2025 года</h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      {/* <div id="second-block" className="h-screen overflow-hidden">
+        some contents
+      </div> */}
+    </main>
+  );
 }
 
-export default App
+export default App;
