@@ -19,6 +19,8 @@ body {
 }
 
 @theme {
+  --color-gradient-in: #00c6ff;
+  --color-gradient-out: #0072ff;
   --color-background-primary: #ffffff;
   --color-background-secondary: #eaeaea;
   --color-background-tertiary: #f7f7f7;
@@ -83,22 +85,26 @@ body {
 }
 
 .animated-gradient {
-  background: linear-gradient(270deg, #00c6ff, #0072ff);
+  background: linear-gradient(
+    270deg,
+    var(--color-gradient-in),
+    var(--color-gradient-out)
+  );
   background-size: 400% 400%;
   animation: gradient-animation 7s ease infinite;
 }
 
 @layer components {
   .typo-large-title {
-    @apply text-[24px] font-bold leading-[26px] lg:text-[28px] lg:leading-[30px];
+    @apply text-[32px] font-bold leading-[32px] lg:text-[48px] lg:leading-[48px];
   }
 
   .typo-title {
-    @apply text-[18px] font-bold leading-[20px] lg:text-[20px] lg:leading-[22px];
+    @apply text-[24px] font-bold leading-[26px] lg:text-[30px] lg:leading-[30px];
   }
 
   .typo-small-title {
-    @apply text-[16px] font-bold leading-[18px] lg:text-[16px] lg:leading-[18px];
+    @apply text-[16px] font-bold leading-[20px] lg:text-[18px] lg:leading-[22px];
   }
 
   .typo-text {
@@ -132,15 +138,15 @@ body {
   }
 
   h1 {
-    @apply text-[24px] font-bold leading-[26px] lg:text-[28px] lg:leading-[30px];
+    @apply text-[32px] font-bold leading-[32px] lg:text-[48px] lg:leading-[48px];
   }
 
   h2 {
-    @apply text-[18px] font-bold leading-[20px] lg:text-[20px] lg:leading-[22px];
+    @apply text-[24px] font-bold leading-[26px] lg:text-[30px] lg:leading-[30px];
   }
 
   h3 {
-    @apply text-[16px] font-bold leading-[18px] lg:text-[16px] lg:leading-[18px];
+    @apply text-[16px] font-bold leading-[20px] lg:text-[18px] lg:leading-[22px];
   }
 
   p {
