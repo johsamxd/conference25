@@ -5,7 +5,7 @@ import { Typewriter } from "@/components/animated/Typewriter";
 
 export function Home() {
   return (
-    <div className="flex flex-col gap-10 animated-gradient h-screen px-40 ">
+    <div className="flex flex-col gap-10  h-screen px-40 ">
       <Header />
       <div className="flex w-full text-background-secondary mt-20">
         <div className="flex flex-col gap-5 w-[50vw]">
