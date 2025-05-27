@@ -27,15 +27,15 @@ export function Home() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2.5">
               <h3>Дата:</h3>
-              <h2 className="flex gap-2.5">
+              <div className="flex gap-2.5">
                 <DateContent /> <SplitText text="июня 2025 года" type="h2" />
-              </h2>
+              </div>
             </div>
             <div className="flex flex-col gap-2.5">
               <h3>Место проведения:</h3>
-              <h2 className="flex gap-2.5">
+              <div className="flex gap-2.5">
                 <Typewriter text="*место проведения*" />
-              </h2>
+              </div>
             </div>
           </div>
         </div>
