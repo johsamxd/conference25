@@ -9,9 +9,6 @@ export function Program() {
         {PROGRAM.map((p, i) => (
           <ProgramBlock key={i} data={p} />
         ))}
-        {/* {PROGRAM.map((p, i) => (
-          <ProgramBlock key={i} data={p} />
-        ))} */}
       </HorizontalScroll>
     </div>
   );

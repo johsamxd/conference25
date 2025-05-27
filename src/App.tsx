@@ -1,5 +1,4 @@
 import { Home, Presidium, Program } from "@/pages";
-import FollowPointer from "./components/animated/FollowPointer";
 import SplashCursor from "./components/animated/SplashCursor";
 
 function App() {
@@ -10,7 +9,6 @@ function App() {
       <Presidium />
 
       <SplashCursor />
-      <FollowPointer />
     </main>
   );
 }

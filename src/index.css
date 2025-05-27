@@ -19,6 +19,7 @@ body {
 }
 
 @theme {
+  --color-gradient-in: #253c78;
   --color-background-primary: #f4f4f4;
   --color-background-secondary: #ffffff;
   --color-background-tertiary: #f7f7f7;
@@ -82,7 +83,7 @@ body {
 .animated-gradient {
   background: linear-gradient(
     270deg,
-    var(--color-main-primary),
+    var(--color-gradient-in),
     var(--color-main-secondary)
   );
   background-size: 400% 400%;

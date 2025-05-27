@@ -10,7 +10,10 @@ export function Header({
     element?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className={cn("flex gap-2.5 items-center pt-2", className)} {...props}>
+    <div
+      className={cn("flex gap-2.5 items-center pt-2 z-10", className)}
+      {...props}
+    >
       <div className="w-full flex justify-center mr-14">
         <Button variant="link" onClick={() => handleScroll("program")}>
           Программа

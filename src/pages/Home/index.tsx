@@ -2,10 +2,11 @@ import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
 import { Header } from "./components/Header";
 import { Typewriter } from "@/components/animated/Typewriter";
+import FollowPointer from "@/components/animated/FollowPointer";
 
 export function Home() {
   return (
-    <div className="flex flex-col gap-10  h-screen px-40 ">
+    <div className="flex flex-col gap-10  h-screen px-40 overflow-hidden">
       <Header />
       <div className="flex w-full text-background-secondary mt-20">
         <div className="flex flex-col gap-5 w-[50vw]">
@@ -40,6 +41,7 @@ export function Home() {
           </div>
         </div>
       </div>
+      <FollowPointer />
     </div>
   );
 }
