@@ -16,7 +16,6 @@ export function PresidiumModal({
       <motion.div
         layoutId={presidium.id}
         className="relative bg-background-secondary rounded-2xl w-min"
-        onClick={(e) => e.stopPropagation()}
       >
         <div className="modal-content">
           <div className="h-[60vh] relative rounded-t-2xl aspect-square overflow-hidden cursor-pointer">
