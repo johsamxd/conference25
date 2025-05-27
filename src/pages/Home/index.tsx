@@ -1,8 +1,8 @@
 import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
 import { Header } from "./components/Header";
-import { Typewriter } from "@/components/animated/Typewriter";
 import FollowPointer from "@/components/animated/FollowPointer";
+import { Typewriter } from "@/components/animated/Typewriter";
 
 export function Home() {
   return (
@@ -14,9 +14,10 @@ export function Home() {
             <img src="/images/logo.png" />
           </div>
           <div className="flex flex-col gap-5">
-            <SplitText
+            <Typewriter
+              homeTitle
+              delay={12000}
               text="VII Республиканская конференция «Закупки Якутии-2025»"
-              type="h1"
             />
             <SplitText
               text="Данное мероприятие является одной из ключевых площадок для конструктивного диалога, обмена опытом и выработки стратегий развития системы закупок в Республике Саха (Якутия). Ежегодно конференция объединяет государственных заказчиков, представителей бизнессообщества и экспертов в сфере закупок для обсуждения современных вызовов и возможностей, а также поиска эффективных решений для повышения прозрачности, результативности и цифровизации в области закупочной деятельности."
@@ -35,7 +36,7 @@ export function Home() {
             <div className="flex flex-col gap-2.5">
               <h3>Место проведения:</h3>
               <div className="flex gap-2.5">
-                <Typewriter text="*место проведения*" />
+                <SplitText text="*место проведения*" type="h2" />
               </div>
             </div>
           </div>
