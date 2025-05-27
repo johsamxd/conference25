@@ -1,15 +1,28 @@
 import { Home, Presidium, Program } from "@/pages";
 import SplashCursor from "./components/animated/SplashCursor";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 function App() {
   return (
-    <main className="animated-gradient">
-      <Home />
-      <Program />
-      <Presidium />
+    <QueryClientProvider
+      client={
+        new QueryClient({
+          defaultOptions: {
+            queries: { retry: false, refetchOnWindowFocus: false },
+          },
+        })
+      }
+    >
+      <main className="animated-gradient">
+        <Home />
 
-      <SplashCursor />
-    </main>
+        <Program />
+
+        <Presidium />
+
+        <SplashCursor />
+      </main>
+    </QueryClientProvider>
   );
 }
 

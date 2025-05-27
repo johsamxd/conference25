@@ -12,7 +12,7 @@ export function HorizontalScroll({
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-36%"]);
 
   return (
     <div ref={targetRef} className="h-[250vh]">
@@ -20,7 +20,7 @@ export function HorizontalScroll({
         <h2 className="w-full text-center text-background-secondary pt-5">
           {title}
         </h2>
-        <motion.div style={{ x }} className="flex gap-2.5">
+        <motion.div style={{ x }} className="flex gap-5">
           {children}
         </motion.div>
       </div>
