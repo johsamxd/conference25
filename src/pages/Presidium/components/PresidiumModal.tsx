@@ -9,22 +9,24 @@ export function PresidiumModal({
 }) {
   return (
     <div
-      className="fixed inset-0 flex items-center justify-center bg-black"
+      className="fixed inset-0 flex items-center justify-center"
       onClick={onClose}
     >
+      <div className="absolute inset-0 bg-black opacity-50" />
       <motion.div
         layoutId={presidium.id}
-        className="bg-background-secondary rounded-2xl w-min"
+        className="relative bg-background-secondary rounded-2xl w-min"
+        onClick={(e) => e.stopPropagation()}
       >
-        <div>
-          <div className="h-[60vh] relative rounded-t-2xl aspect-square overflow-hidden group cursor-pointer">
+        <div className="modal-content">
+          <div className="h-[60vh] relative rounded-t-2xl aspect-square overflow-hidden cursor-pointer">
             <img
               src={presidium.image}
               alt={presidium.name}
-              className="absolute inset-0 object-cover transition-opacity duration-500"
+              className="absolute object-cover"
             />
 
-            <div className="absolute inset-0 rounded-2xl p-4 flex flex-col justify-end text-white">
+            <div className="absolute inset-0 rounded-2xl p-4 flex flex-col justify-start text-white">
               <h3>{presidium.name}</h3>
               <p>{presidium.short_description}</p>
             </div>
