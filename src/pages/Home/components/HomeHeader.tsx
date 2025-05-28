@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/sheet";
 import { Icon } from "@/components/ui/icon";
 
-export function Header({
+export function HomeHeader({
   className,
   ...props
 }: React.HTMLProps<HTMLDivElement>) {
