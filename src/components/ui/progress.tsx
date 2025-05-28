@@ -11,7 +11,7 @@ interface ProgressProps {
 
 export default function Progress(props: ProgressProps) {
   return (
-    <div className={cn("flex flex-col", props.className)}>
+    <div className={cn("flex flex-col gap-2.5", props.className)}>
       {props.items.map((item, index) => (
         <div key={index}>
           <ProgressItem
@@ -50,9 +50,7 @@ export function ProgressItem(props: ProgressItemProps) {
           <div className="m-0.5 h-[16px] w-[16px] rounded-full bg-element-secondary" />
         );
       case "inactive":
-        return (
-          <div className="m-0.5 h-[16px] w-[16px] rounded-full bg-element-primary" />
-        );
+        return <Icon type="tick" size="md" color="main" />;
     }
   }
 
@@ -69,8 +67,9 @@ export function ProgressItem(props: ProgressItemProps) {
 
   return (
     <div className={cn("flex items-center gap-3 typo-text", getTextColor())}>
-      {getIndicator()}
-      <div className="flex flex-col">
+      <div className="flex-shrink-0 hidden lg:contents">{getIndicator()}</div>
+
+      <div className="flex flex-col gap-1">
         <span className="typo-sub-title text-main-secondary">{props.time}</span>
         <span className="typo-sub-title">{props.text}</span>
       </div>
@@ -80,6 +79,8 @@ export function ProgressItem(props: ProgressItemProps) {
 
 export function ProgressSeparator() {
   return (
-    <div className="-mb-1 -mt-1 ml-[9px] h-10 border-l-2 border-dashed border-element-primary" />
+    <div className="hidden lg:contents">
+      <div className="-mb-1 -mt-1 ml-[9px] h-10 border-l-2 border-dashed border-element-primary " />
+    </div>
   );
 }

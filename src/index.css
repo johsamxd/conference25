@@ -110,11 +110,11 @@ body {
   }
 
   .typo-small-title {
-    @apply text-[18px] font-bold leading-[18px] lg:text-[20px] lg:leading-[20px];
+    @apply text-[16px] font-bold leading-[16px] lg:text-[20px] lg:leading-[20px];
   }
 
   .typo-sub-title {
-    @apply text-[16px] font-bold leading-[16px] lg:text-[16px] lg:leading-[18px];
+    @apply text-[14px] font-bold leading-[14px] lg:text-[16px] lg:leading-[16px];
   }
 
   .typo-text {
@@ -156,11 +156,11 @@ body {
   }
 
   h3 {
-    @apply text-[18px] font-bold leading-[18px] lg:text-[20px] lg:leading-[20px];
+    @apply text-[16px] font-bold leading-[16px] lg:text-[20px] lg:leading-[20px];
   }
 
   p {
-    @apply text-[16px] font-normal leading-[22px] lg:text-[16px] lg:leading-[22px];
+    @apply text-[14px] font-normal leading-[16px] lg:text-[16px] lg:leading-[22px];
   }
 
   label {

@@ -93,8 +93,8 @@ const colorToClassName = new Map<IconColor, ColorWithHover>([
   [
     "main",
     {
-      color: "fill-main-primary",
-      text: "text-main-primary",
+      color: "fill-main-secondary",
+      text: "text-main-secondary",
     },
   ],
   [

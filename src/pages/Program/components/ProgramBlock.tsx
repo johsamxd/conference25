@@ -6,7 +6,7 @@ interface Props {
 
 export function ProgramBlock({ data }: Props) {
   return (
-    <div className="w-[50vw] p-6 rounded-3xl flex flex-col gap-5 bg-background-primary shadow-white">
+    <div className="w-[90vw] lg:w-[50vw] p-6 rounded-3xl flex flex-col gap-5 bg-background-primary shadow-white">
       <h3 className="text-text-secondary">{data.title}</h3>
       <Progress items={data?.items} current={0} skipped={[0]} />
     </div>
