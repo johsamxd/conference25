@@ -8,7 +8,7 @@ import { DisappearingDiv } from "@/components/animated/DisappearingDiv";
 export function Home() {
   return (
     <DisappearingDiv>
-      <div className="flex flex-col gap-10 h-screen px-40">
+      <div className="flex flex-col gap-10 h-screen px-5 md:px-10 lg:px-20 xl:px-40">
         <Header />
         <div className="flex w-full text-text-primary mt-20">
           <div className="flex flex-col gap-5 w-[50vw]">

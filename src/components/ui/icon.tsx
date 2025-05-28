@@ -51,6 +51,7 @@ export const IconTypes = [
   "event",
   "menu",
   "placeholder",
+  "vk",
 ] as const;
 
 /** Icon types */
