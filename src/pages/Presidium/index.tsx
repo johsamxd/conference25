@@ -25,10 +25,10 @@ export function Presidium() {
 
       <div className="p-5 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {PRESIDIUMS.map((p, i) => (
-          <PersonCard key={i} presidium={p} onOpen={() => handleOpen(p)} />
+          <PersonCard key={i} person={p} onOpen={() => handleOpen(p)} />
         ))}
       </div>
-      {presidium && <PersonModal onClose={handleClose} presidium={presidium} />}
+      {presidium && <PersonModal onClose={handleClose} person={presidium} />}
     </div>
   );
 }
