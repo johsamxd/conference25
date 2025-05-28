@@ -96,6 +96,22 @@ body {
   animation: gradient-animation 7s ease infinite;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg); /* Поворот на 5 градусов */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotate {
+  animation: rotate 5s ease-in-out infinite; /* Анимация длится 5 секунд, плавно и бесконечно */
+}
+
 .shadow-white {
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }

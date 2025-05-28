@@ -7,7 +7,7 @@ export function HomeCore() {
     <div className="flex flex-col  w-full gap-10 text-text-primary lg:flex-row">
       <div className="flex flex-col gap-5 lg:w-[50vw]">
         <div className="flex items-center justify-center">
-          <div className="size-50">
+          <div className="size-50 animate-rotate">
             <img src="/images/logo.png" />
           </div>
         </div>
