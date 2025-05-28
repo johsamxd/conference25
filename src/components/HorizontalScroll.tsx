@@ -5,14 +5,16 @@ import { useRef, type ReactNode } from "react";
 export function HorizontalScroll({
   children,
   title,
+  range,
 }: {
   children: ReactNode;
   title: string;
+  range: string[];
 }) {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-36%"]);
+  const x = useTransform(scrollYProgress, [0, 1], range);
 
   return (
     <div ref={targetRef} className="h-[250vh]">

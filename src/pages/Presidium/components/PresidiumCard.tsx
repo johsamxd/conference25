@@ -10,7 +10,7 @@ export function PresidiumCard({
   return (
     <motion.div
       layoutId={presidium.id}
-      className="relative rounded-2xl aspect-[3/4] overflow-hidden group cursor-pointer"
+      className="relative rounded-2xl aspect-[3/4] overflow-hidden group cursor-pointer shadow-white"
       onClick={onOpen}
     >
       <img

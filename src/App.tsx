@@ -1,4 +1,4 @@
-import { Home, Presidium, Program } from "@/pages";
+import { Home, Lectors, Presidium, Program } from "@/pages";
 import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -19,6 +19,8 @@ function App() {
         <Program />
 
         <Presidium />
+
+        <Lectors />
 
         <SplashCursor />
       </main>

@@ -19,7 +19,8 @@ body {
 }
 
 @theme {
-  --color-gradient-in: #253c78;
+  --color-gradient-test: #2e2f4d;
+  --color-gradient-in: #27283b;
   --color-background-primary: #f4f4f4;
   --color-background-secondary: #ffffff;
   --color-background-tertiary: #f7f7f7;
@@ -28,9 +29,9 @@ body {
   --color-text-tertiary: #a1a1a1;
   --color-text-button: #ffffff;
   --color-text-alternative: #8df0cc;
-  --color-main-primary: #0c58a6;
-  --color-main-secondary: #598fd9;
-  --color-main-tertiary: #7fbcd9;
+  --color-main-primary: #253c78;
+  --color-main-secondary: #0c58a6;
+  --color-main-tertiary: #598fd9;
   --color-element-primary: #c6c7c1;
   --color-element-secondary: #5f5f5f;
   --color-element-tertiary: #535353;
@@ -83,11 +84,15 @@ body {
 .animated-gradient {
   background: linear-gradient(
     270deg,
-    var(--color-gradient-in),
-    var(--color-main-secondary)
+    var(--color-black),
+    var(--color-gradient-test)
   );
   background-size: 400% 400%;
   animation: gradient-animation 7s ease infinite;
+}
+
+.shadow-white {
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 @layer components {

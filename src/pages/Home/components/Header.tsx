@@ -15,12 +15,27 @@ export function Header({
       {...props}
     >
       <div className="w-full flex justify-center mr-14">
-        <Button variant="link" onClick={() => handleScroll("program")}>
+        <Button
+          variant="link"
+          size="lg"
+          onClick={() => handleScroll("program")}
+        >
           Программа
         </Button>
-        <Button variant="link">Список президиумов</Button>
-        <Button variant="link">Информация о ведущем</Button>
-        <Button variant="link">Лекторы</Button>
+        <Button
+          variant="link"
+          size="lg"
+          onClick={() => handleScroll("presidium")}
+        >
+          Список президиумов
+        </Button>
+        <Button
+          variant="link"
+          size="lg"
+          onClick={() => handleScroll("lectors")}
+        >
+          Лекторы
+        </Button>
       </div>
     </div>
   );
