@@ -19,15 +19,18 @@ body {
 }
 
 @theme {
-  --color-gradient-test: #2e2f4d;
   --color-gradient-in: #27283b;
+  --color-gradient-out: #0c58a6; /*  2e2f4d */
   --color-background-primary: #f4f4f4;
   --color-background-secondary: #ffffff;
   --color-background-tertiary: #f7f7f7;
-  --color-text-primary: #161616;
-  --color-text-secondary: #494949;
+  /* --color-text-primary: #161616; */
+  /* --color-text-secondary: #494949;
   --color-text-tertiary: #a1a1a1;
-  --color-text-button: #ffffff;
+  --color-text-button: #ffffff; */
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #161616;
+  --color-text-tertiary: #656565;
   --color-text-alternative: #8df0cc;
   --color-main-primary: #253c78;
   --color-main-secondary: #0c58a6;
@@ -46,6 +49,8 @@ body {
 }
 
 .dark {
+  --color-gradient-in: #27283b;
+  --color-gradient-out: #1e1e1e; /*  2e2f4d */
   --color-background-primary: #1e1e1e;
   --color-background-secondary: #242424;
   --color-background-tertiary: #343434;
@@ -84,8 +89,8 @@ body {
 .animated-gradient {
   background: linear-gradient(
     270deg,
-    var(--color-black),
-    var(--color-gradient-test)
+    var(--color-gradient-in),
+    var(--color-gradient-out)
   );
   background-size: 400% 400%;
   animation: gradient-animation 7s ease infinite;

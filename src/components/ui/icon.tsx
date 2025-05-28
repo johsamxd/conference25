@@ -78,7 +78,7 @@ interface ColorWithHover {
 }
 
 const colorToClassName = new Map<IconColor, ColorWithHover>([
-  ["white", { color: "fill-text-button", text: "text-text-button" }],
+  ["white", { color: "fill-text-primary", text: "text-text-primary" }],
   ["dark", { color: "fill-element-secondary", text: "text-element-secondary" }],
   [
     "light",

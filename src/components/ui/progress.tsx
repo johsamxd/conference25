@@ -61,7 +61,7 @@ export function ProgressItem(props: ProgressItemProps) {
       case "done":
         return "text-text-primary";
       case "active":
-        return "text-text-secondary";
+        return "text-text-primary";
       case "inactive":
         return "text-text-tertiary";
     }

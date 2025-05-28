@@ -1,6 +1,8 @@
 import { Home, Lectors, Presidium, Program } from "@/pages";
 import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { StorageProvider } from "./contexts/StorageContext";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (
@@ -13,17 +15,19 @@ function App() {
         })
       }
     >
-      <main className="animated-gradient">
-        <Home />
-
-        <Program />
-
-        <Presidium />
-
-        <Lectors />
-
-        <SplashCursor />
-      </main>
+      <StorageProvider>
+        <ThemeProvider>
+          <main className="animated-gradient">
+            <Home />
+            <Program />
+            <Presidium />
+            <Lectors />
+            <div className="hidden lg:contents">
+              <SplashCursor />
+            </div>
+          </main>
+        </ThemeProvider>
+      </StorageProvider>
     </QueryClientProvider>
   );
 }

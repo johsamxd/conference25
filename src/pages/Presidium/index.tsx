@@ -21,7 +21,7 @@ export function Presidium() {
   return (
     <DisappearingDiv start={3200} end={4000}>
       <div id="presidium" className="flex flex-col gap-10 h-screen px-4 pt-4">
-        <h2 className="w-full text-center text-background-secondary">
+        <h2 className="w-full text-center text-text-primary">
           Список президиумов
         </h2>
 

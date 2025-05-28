@@ -10,7 +10,7 @@ export function Home() {
     <DisappearingDiv>
       <div className="flex flex-col gap-10 h-screen px-40">
         <Header />
-        <div className="flex w-full text-background-secondary mt-20">
+        <div className="flex w-full text-text-primary mt-20">
           <div className="flex flex-col gap-5 w-[50vw]">
             <div className="size-50">
               <img src="/images/logo.png" />

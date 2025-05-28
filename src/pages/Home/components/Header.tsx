@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "../../../components/ui/button";
+import { ToggleThemeButton } from "@/components/ToggleThemeButton";
 
 export function Header({
   className,
@@ -11,9 +12,13 @@ export function Header({
   };
   return (
     <div
-      className={cn("flex gap-2.5 items-center pt-2 z-10", className)}
+      className={cn(
+        "grid grid-cols-3 gap-2.5 items-center pt-2 z-10",
+        className
+      )}
       {...props}
     >
+      <div />
       <div className="w-full flex justify-center mr-14">
         <Button
           variant="link"
@@ -36,6 +41,9 @@ export function Header({
         >
           Лекторы
         </Button>
+      </div>
+      <div className="flex justify-end">
+        <ToggleThemeButton />
       </div>
     </div>
   );

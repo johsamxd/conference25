@@ -25,12 +25,12 @@ export function PresidiumModal({
               className="absolute object-cover"
             />
 
-            <div className="absolute inset-0 rounded-2xl p-4 flex flex-col justify-start text-white">
+            <div className="absolute inset-0 rounded-2xl p-4 flex flex-col justify-start text-text-primary">
               <h3>{presidium.name}</h3>
               <p>{presidium.short_description}</p>
             </div>
           </div>
-          <div className="px-5 py-2.5">
+          <div className="px-5 py-2.5 text-text-secondary">
             <p>{presidium?.description}</p>
           </div>
         </div>

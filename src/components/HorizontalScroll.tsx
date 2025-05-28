@@ -19,9 +19,7 @@ export function HorizontalScroll({
   return (
     <div ref={targetRef} className="h-[250vh]">
       <div className="h-[80vh] sticky top-0 flex flex-col gap-10 items-start justify-start  overflow-hidden">
-        <h2 className="w-full text-center text-background-secondary pt-5">
-          {title}
-        </h2>
+        <h2 className="w-full text-center text-text-primary pt-5">{title}</h2>
         <motion.div style={{ x }} className="flex gap-5">
           {children}
         </motion.div>
