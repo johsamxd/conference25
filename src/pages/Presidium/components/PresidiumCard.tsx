@@ -16,7 +16,7 @@ export function PresidiumCard({
       <img
         src={presidium.image}
         alt={presidium.name}
-        className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+        className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity duration-300"
       />
 
       <div className="absolute inset-0 rounded-2xl p-4 flex flex-col justify-end text-text-primary">

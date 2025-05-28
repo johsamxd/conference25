@@ -4,7 +4,7 @@ import { PROGRAM } from "./data/program";
 
 export function Program() {
   return (
-    <div id="program" className="pl-2 lg:pl-5">
+    <div id="program" className="pl-2 lg:pl-5 min-h-screen ">
       <div className="hidden lg:contents">
         <ProgramMain />
       </div>

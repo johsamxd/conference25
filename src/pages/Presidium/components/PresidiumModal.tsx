@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export function PresidiumModal({
   onClose,
@@ -7,12 +8,20 @@ export function PresidiumModal({
   onClose: () => void;
   presidium: any;
 }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <div
       className="fixed inset-0 flex items-center justify-center"
       onClick={onClose}
     >
-      <div className="absolute inset-0 bg-black opacity-50" />
+      <div className="absolute inset-0 bg-black opacity-70" />
       <motion.div
         layoutId={presidium.id}
         className="relative bg-background-secondary rounded-2xl w-min"
