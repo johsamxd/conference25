@@ -4,7 +4,7 @@ import { Typewriter } from "@/components/animated/Typewriter";
 
 export function HomeCore() {
   return (
-    <div className="flex flex-col  w-full gap-10 text-text-primary lg:mt-20 lg:flex-row">
+    <div className="flex flex-col  w-full gap-10 text-text-primary lg:flex-row">
       <div className="flex flex-col gap-5 lg:w-[50vw]">
         <div className="flex items-center justify-center">
           <div className="size-50">

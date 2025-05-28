@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { PresidiumCard } from "./components/PresidiumCard";
 import { PRESIDIUMS } from "./data/presidiums";
-import { PresidiumModal } from "./components/PresidiumModal";
+import { PersonCard } from "@/components/PersonCard";
+import { PersonModal } from "@/components/PersonModal";
 
 export function Presidium() {
   const [isOpen, setIsOpen] = useState<any>(null);
@@ -25,12 +25,10 @@ export function Presidium() {
 
       <div className="p-5 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {PRESIDIUMS.map((p, i) => (
-          <PresidiumCard key={i} presidium={p} onOpen={() => handleOpen(p)} />
+          <PersonCard key={i} presidium={p} onOpen={() => handleOpen(p)} />
         ))}
       </div>
-      {presidium && (
-        <PresidiumModal onClose={handleClose} presidium={presidium} />
-      )}
+      {presidium && <PersonModal onClose={handleClose} presidium={presidium} />}
     </div>
   );
 }

@@ -1,15 +1,31 @@
-import { HorizontalScroll } from "@/components/HorizontalScroll";
 import { LECTORS } from "./data/lectors";
-import { LectorCard } from "./components/LectorCard";
+import { useState } from "react";
+import { PersonCard } from "@/components/PersonCard";
+import { PersonModal } from "@/components/PersonModal";
 
 export function Lectors() {
+  const [isOpen, setIsOpen] = useState<any>(null);
+  const [presidium, setPresidium] = useState<any>(null);
+
+  const handleOpen = (p: any) => {
+    setPresidium(p);
+    setIsOpen(!isOpen);
+  };
+
+  const handleClose = () => {
+    setPresidium(null);
+    setIsOpen(false);
+  };
+
   return (
-    <div id="lectors" className="pl-5">
-      <HorizontalScroll title={"Лекторы"} range={["0.1%", "-60%"]}>
+    <div id="lectors" className="flex flex-col gap-10 min-h-screen px-4 pt-4">
+      <h2 className="w-full text-center text-text-primary">Лекторы</h2>
+      <div className="p-5 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {LECTORS.map((l, i) => (
-          <LectorCard key={i} lector={l} />
+          <PersonCard key={i} presidium={l} onOpen={() => handleOpen(l)} />
         ))}
-      </HorizontalScroll>
+      </div>
+      {presidium && <PersonModal onClose={handleClose} presidium={presidium} />}
     </div>
   );
 }
