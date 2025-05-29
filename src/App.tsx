@@ -1,4 +1,12 @@
-import { Contacts, Events, Home, Lectors, Presidium, Program } from "@/pages";
+import {
+  Contacts,
+  Events,
+  Home,
+  Lectors,
+  Moderators,
+  Presidium,
+  Program,
+} from "@/pages";
 // import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
@@ -22,6 +30,7 @@ function App() {
             <Program />
             <Presidium />
             <Lectors />
+            <Moderators />
             <Events />
             <Contacts />
             {/* <div className="hidden lg:contents">
