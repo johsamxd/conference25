@@ -41,11 +41,14 @@ export function CountdownCalendar({ targetDate }: CountdownCalendarProps) {
 
       <div className="p-4 flex flex-col items-center justify-center space-y-2">
         <div className="text-element-secondary text-4xl font-extrabold tracking-widest">
-          {formatNumber(timeLeft.days)}:{formatNumber(timeLeft.hours)}:
-          {formatNumber(timeLeft.minutes)}:{formatNumber(timeLeft.seconds)}
+          <span className="text-main-tertiary">
+            {formatNumber(timeLeft.days)}
+          </span>
+          :{formatNumber(timeLeft.hours)}:{formatNumber(timeLeft.minutes)}:
+          {formatNumber(timeLeft.seconds)}
         </div>
         <div className="text-element-primary text-sm uppercase tracking-wide">
-          ДД:ЧЧ:ММ:СС
+          <span className="text-main-tertiary">ДД:</span>ЧЧ:ММ:СС
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ export function Presidium() {
   };
 
   return (
-    <div id="presidium" className="flex flex-col gap-10 min-h-screen px-4 pt-4">
+    <div id="presidium" className="flex flex-col gap-10 px-4 ">
       <h2 className="w-full text-center text-text-primary">
         Список президиумов
       </h2>

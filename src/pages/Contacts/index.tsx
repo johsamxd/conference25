@@ -3,7 +3,7 @@ import { Icon } from "@/components/ui/icon";
 
 export function Contacts() {
   return (
-    <div className="bg-background-primary/50 border-1 border-element-primary items-center my-10 mx-5 p-5 rounded-3xl flex flex-col sm:flex-row gap-5 justify-between">
+    <div className="bg-background-primary/50 border-1 border-element-primary items-center my-10 mx-8 p-5 rounded-3xl flex flex-col sm:flex-row gap-5 justify-between">
       <div className="flex flex-col gap-2.5 md:flex-row md:gap-5">
         <div className="flex gap-2.5 items-center">
           <span>ГКУ РС(Я) «Центр закупок РС(Я)»</span>

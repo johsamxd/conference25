@@ -25,7 +25,7 @@ function App() {
     >
       <StorageProvider>
         <ThemeProvider>
-          <main className="animated-gradient py-2.5">
+          <main className="animated-gradient py-2.5 flex flex-col gap-20">
             <Home />
             <Program />
             <Presidium />

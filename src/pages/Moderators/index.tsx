@@ -3,7 +3,7 @@ import { MODERATORS } from "./data/moderators";
 
 export function Moderators() {
   return (
-    <div id="lectors" className="flex flex-col gap-10 min-h-screen px-4 pt-4">
+    <div id="lectors" className="flex flex-col gap-10  px-4 pt-4">
       <h2 className="w-full text-center text-text-primary">Модераторы</h2>
       <div className="p-5 rounded-2xl grid grid-cols-1 sm:grid-cols-2  gap-5 ">
         {MODERATORS.map((m, i) => (
