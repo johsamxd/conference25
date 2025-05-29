@@ -18,7 +18,7 @@ const CopyButton = ({ value }: { value: string }) => {
       <Icon
         type={copied ? "tick" : "copy"}
         size="sm"
-        color={copied ? "main" : "light"}
+        color={copied ? "main" : "white"}
         noHover={copied}
       />
     </Button>

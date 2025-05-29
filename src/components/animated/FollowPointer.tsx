@@ -8,7 +8,7 @@ export default function FollowPointer() {
   return (
     <motion.div
       ref={ref}
-      className="border-2 rounded-full size-25 border-background-secondary"
+      className="border-2 rounded-full size-25 border-text-primary"
       style={{ x, y }}
     />
   );

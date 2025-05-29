@@ -29,7 +29,7 @@ export function HomeHeader({
 
       <div className="flex items-center gap-10 lg:gap-20 justify-end">
         <ToggleThemeButton />
-        <div className="flex gap-5">
+        <div className="flex gap-5 lg:gap-8">
           <a href="https://vk.com/centrzakupok14" target="_blank">
             <Icon type="vk" size="md" color="white" />
           </a>
