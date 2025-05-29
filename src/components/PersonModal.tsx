@@ -8,6 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 
 export function PersonModal({
   onClose,
@@ -32,9 +33,9 @@ export function PersonModal({
       <div className="absolute inset-0 bg-black opacity-70" />
       <motion.div
         layoutId={person.id}
-        className="relative bg-background-secondary rounded-2xl w-min"
+        className="relative bg-background-secondary rounded-2xl w-min overflow-y-auto"
       >
-        <div className="h-[60vh] relative rounded-t-2xl aspect-square overflow-hidden cursor-pointer">
+        <div className="h-[50vh] lg:h-[60vh] relative rounded-t-2xl aspect-square overflow-hidden cursor-pointer">
           <img
             src={person.image}
             alt={person.name}
@@ -46,33 +47,32 @@ export function PersonModal({
             <p className="typo-small-text">{person.short_description}</p>
           </div>
         </div>
-        <div className="px-5 py-2.5 flex flex-col gap-2.5 text-text-secondary">
-          <p>{person?.description}</p>
+        <ScrollArea className="h-[40vh]">
+          <div className="px-5 py-2.5 flex flex-col gap-2.5 text-text-secondary overflow-y-auto">
+            <p>{person?.description}</p>
 
-          {person?.program?.length > 0 && <h3>Выступления:</h3>}
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Время</TableHead>
-                <TableHead>Тема</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {person?.program?.map((p: any, i: number) => (
+            {person?.program?.length > 0 && <h3>Выступления:</h3>}
+            <Table>
+              <TableHeader>
                 <TableRow>
-                  <TableCell>{p.time}</TableCell>
-                  <TableCell className="whitespace-normal">
-                    {p.subject}
-                  </TableCell>
+                  <TableHead>Время</TableHead>
+                  <TableHead>Тема</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-          {/* <div key={i} className="flex gap-2.5">
-            <p>{p.time}</p>
-            <p>{p.subject}</p>
-          </div> */}
-        </div>
+              </TableHeader>
+              <TableBody>
+                {person?.program?.map((p: any, i: number) => (
+                  <TableRow key={i}>
+                    <TableCell>{p.time}</TableCell>
+                    <TableCell className="whitespace-normal">
+                      {p.subject}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+          <ScrollBar />
+        </ScrollArea>
       </motion.div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Home, Lectors, Presidium, Program } from "@/pages";
+import { Contacts, Home, Lectors, Presidium, Program } from "@/pages";
 import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
@@ -17,11 +17,12 @@ function App() {
     >
       <StorageProvider>
         <ThemeProvider>
-          <main className="animated-gradient">
+          <main className="animated-gradient py-2.5">
             <Home />
             <Program />
             <Presidium />
             <Lectors />
+            <Contacts />
             <div className="hidden lg:contents">
               <SplashCursor />
             </div>

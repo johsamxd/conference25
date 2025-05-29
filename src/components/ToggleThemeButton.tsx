@@ -10,7 +10,13 @@ export const ToggleThemeButton = ({ className }: { className?: string }) => {
   return (
     <div className={cn("contents", className)}>
       <ThemeChangeAnimElements animStage={animStage} />
-      <Button variant="icon" size="icon" onClick={toggleTheme} id="toggle-btn">
+      <Button
+        variant="icon"
+        size="icon"
+        onClick={toggleTheme}
+        id="toggle-btn"
+        className="cursor-pointer"
+      >
         <Icon
           type={theme === "dark" ? "moon" : "sun"}
           size="md"
