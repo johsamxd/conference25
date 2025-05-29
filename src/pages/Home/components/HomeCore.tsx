@@ -39,14 +39,16 @@ export function HomeCore() {
               <SplitText text="*место проведения*" type="h2" />
             </div>
           </div>
-          <a
-            href="mailto:cz@goszakazyakutia.ru"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-min"
-          >
-            <Button>Написать</Button>
-          </a>
+          <div className="flex justify-center items-center">
+            <a
+              href="mailto:cz@goszakazyakutia.ru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <Button className="w-full rounded-2xl">Написать</Button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
