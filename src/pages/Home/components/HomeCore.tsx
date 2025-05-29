@@ -1,6 +1,7 @@
 import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
 import { Typewriter } from "@/components/animated/Typewriter";
+import { CountdownCalendar } from "@/components/CountdownCalendar";
 import { Button } from "@/components/ui/button";
 
 export function HomeCore() {
@@ -27,6 +28,7 @@ export function HomeCore() {
       </div>
       <div className="flex flex-col gap-10 lg:w-[50vw] lg:items-center">
         <div className="flex flex-col gap-4">
+          <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} />
           <div className="flex flex-col gap-2.5">
             <h3>Дата:</h3>
             <div className="flex gap-2.5">
