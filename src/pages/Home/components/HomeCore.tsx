@@ -1,11 +1,12 @@
 import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
 import { Typewriter } from "@/components/animated/Typewriter";
+import { Button } from "@/components/ui/button";
 
 export function HomeCore() {
   return (
     <div className="flex flex-col  w-full gap-10 text-text-primary lg:flex-row">
-      <div className="flex flex-col gap-5 lg:w-[50vw]">
+      <div className="flex flex-col gap-5 lg:w-[50vw] lg:mb-20">
         <div className="flex items-center justify-center">
           <div className="size-50 animate-rotate">
             <img src="/images/logo.png" />
@@ -38,6 +39,14 @@ export function HomeCore() {
               <SplitText text="*место проведения*" type="h2" />
             </div>
           </div>
+          <a
+            href="mailto:cz@goszakazyakutia.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-min"
+          >
+            <Button>Написать</Button>
+          </a>
         </div>
       </div>
     </div>

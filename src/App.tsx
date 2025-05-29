@@ -1,5 +1,5 @@
 import { Contacts, Home, Lectors, Presidium, Program } from "@/pages";
-import SplashCursor from "./components/animated/SplashCursor";
+// import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -23,9 +23,9 @@ function App() {
             <Presidium />
             <Lectors />
             <Contacts />
-            <div className="hidden lg:contents">
+            {/* <div className="hidden lg:contents">
               <SplashCursor />
-            </div>
+            </div> */}
           </main>
         </ThemeProvider>
       </StorageProvider>
