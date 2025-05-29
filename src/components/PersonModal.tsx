@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "./ui/table";
 
 export function PersonModal({
   onClose,
@@ -42,13 +50,28 @@ export function PersonModal({
           <p>{person?.description}</p>
 
           {person?.program?.length > 0 && <h3>Выступления:</h3>}
-
-          {person?.program?.map((p: any, i: number) => (
-            <div key={i} className="flex gap-2.5">
-              <p>{p.time}</p>
-              <p>{p.subject}</p>
-            </div>
-          ))}
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Время</TableHead>
+                <TableHead>Тема</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {person?.program?.map((p: any, i: number) => (
+                <TableRow>
+                  <TableCell>{p.time}</TableCell>
+                  <TableCell className="whitespace-normal">
+                    {p.subject}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+          {/* <div key={i} className="flex gap-2.5">
+            <p>{p.time}</p>
+            <p>{p.subject}</p>
+          </div> */}
         </div>
       </motion.div>
     </div>
