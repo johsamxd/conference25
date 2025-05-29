@@ -15,13 +15,17 @@ export function Contacts() {
           <CopyButton value={"г. Якутск, проспект Ленина, д. 22"} />
         </div>
         <div className="flex gap-2.5 items-center">
-          <a href="tel:+74112507151">
+          <a href="tel:+74112507151" target="_blank" rel="noopener noreferrer">
             <span>+7 (4112) 507-151</span>
           </a>
           <CopyButton value={"+74112507151"} />
         </div>
         <div className="flex gap-2.5 items-center">
-          <a href="mailto:cz@goszakazyakutia.ru">
+          <a
+            href="mailto:cz@goszakazyakutia.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span>cz@goszakazyakutia.ru</span>
           </a>
           <CopyButton value={"cz@goszakazyakutia.ru"} />
@@ -29,10 +33,18 @@ export function Contacts() {
       </div>
 
       <div className="flex gap-5">
-        <a href="https://vk.com/centrzakupok14" target="_blank">
+        <a
+          href="https://vk.com/centrzakupok14"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon type="vk" size="md" color="white" />
         </a>
-        <a href="https://t.me/centerzakupok" target="_blank">
+        <a
+          href="https://t.me/centerzakupok"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icon type="send" size="md" color="white" />
         </a>
       </div>
