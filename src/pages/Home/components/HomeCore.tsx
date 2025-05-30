@@ -40,18 +40,26 @@ export function HomeCore() {
           </div>
           <div className="flex flex-col gap-2.5">
             <h3>Место проведения:</h3>
-            <div className="flex gap-2.5">
+            <a
+              href="https://2gis.ru/yakutsk/inside/7037510072941119"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SplitText
                 text="Дом дружбы народов им. А.Е. Кулаковского"
                 type="h2"
               />
-            </div>
+            </a>
           </div>
           <div className="flex flex-col gap-2.5">
             <h3>Адрес:</h3>
-            <div className="flex gap-2.5">
+            <a
+              href="https://2gis.ru/yakutsk/inside/7037510072941119"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SplitText text="г. Якутск, улица Пояркова, 4" type="h2" />
-            </div>
+            </a>
           </div>
           <div className="flex justify-center items-center">
             <a

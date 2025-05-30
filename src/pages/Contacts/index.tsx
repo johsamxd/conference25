@@ -11,7 +11,13 @@ export function Contacts() {
         </div>
 
         <div className="flex gap-2.5 items-center">
-          <span>г. Якутск, улица Пояркова, 4</span>
+          <a
+            href="https://2gis.ru/yakutsk/inside/7037510072941119"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            г. Якутск, улица Пояркова, 4
+          </a>
           <CopyButton value={"г. Якутск, улица Пояркова, 4"} />
         </div>
         <div className="flex gap-2.5 items-center">
