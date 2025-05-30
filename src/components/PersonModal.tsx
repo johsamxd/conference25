@@ -47,29 +47,32 @@ export function PersonModal({
             <p className="typo-small-text">{person.short_description}</p>
           </div>
         </div>
-        <ScrollArea className="h-[40vh]">
+        <ScrollArea className="max-h-[40vh]">
           <div className="px-5 py-2.5 flex flex-col gap-2.5 text-text-secondary overflow-y-auto">
             <p>{person?.description}</p>
-
-            {person?.program?.length > 0 && <h3>Выступления:</h3>}
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Время</TableHead>
-                  <TableHead>Тема</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {person?.program?.map((p: any, i: number) => (
-                  <TableRow key={i}>
-                    <TableCell>{p.time}</TableCell>
-                    <TableCell className="whitespace-normal">
-                      {p.subject}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+            {person?.program?.length > 0 && (
+              <>
+                <h3>Выступления:</h3>
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead>Время</TableHead>
+                      <TableHead>Тема</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {person?.program?.map((p: any, i: number) => (
+                      <TableRow key={i}>
+                        <TableCell>{p.time}</TableCell>
+                        <TableCell className="whitespace-normal">
+                          {p.subject}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </>
+            )}
           </div>
           <ScrollBar />
         </ScrollArea>

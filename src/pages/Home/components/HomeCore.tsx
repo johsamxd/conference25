@@ -27,8 +27,11 @@ export function HomeCore() {
         </div>
       </div>
       <div className="flex flex-col gap-10 lg:w-[50vw] lg:items-center">
-        <div className="flex flex-col gap-4">
-          <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} />
+        <div className="flex flex-col  gap-4">
+          <div className="flex justify-center">
+            <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} />
+          </div>
+
           <div className="flex flex-col gap-2.5">
             <h3>Дата:</h3>
             <div className="flex gap-2.5">
@@ -38,7 +41,16 @@ export function HomeCore() {
           <div className="flex flex-col gap-2.5">
             <h3>Место проведения:</h3>
             <div className="flex gap-2.5">
-              <SplitText text="*место проведения*" type="h2" />
+              <SplitText
+                text="Дом дружбы народов им. А.Е. Кулаковского"
+                type="h2"
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-2.5">
+            <h3>Адрес:</h3>
+            <div className="flex gap-2.5">
+              <SplitText text="г. Якутск, улица Пояркова, 4" type="h2" />
             </div>
           </div>
           <div className="flex justify-center items-center">
@@ -46,9 +58,9 @@ export function HomeCore() {
               href="mailto:cz@goszakazyakutia.ru"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full"
+              className="w-min"
             >
-              <Button className="w-full rounded-2xl">Написать</Button>
+              <Button className="w-min rounded-2xl mt-2.5">Написать</Button>
             </a>
           </div>
         </div>

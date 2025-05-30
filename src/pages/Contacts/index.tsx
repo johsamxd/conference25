@@ -11,8 +11,8 @@ export function Contacts() {
         </div>
 
         <div className="flex gap-2.5 items-center">
-          <span>г. Якутск, проспект Ленина, д. 22</span>
-          <CopyButton value={"г. Якутск, проспект Ленина, д. 22"} />
+          <span>г. Якутск, улица Пояркова, 4</span>
+          <CopyButton value={"г. Якутск, улица Пояркова, 4"} />
         </div>
         <div className="flex gap-2.5 items-center">
           <a href="tel:+74112507151" target="_blank" rel="noopener noreferrer">

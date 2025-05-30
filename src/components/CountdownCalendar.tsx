@@ -34,7 +34,7 @@ export function CountdownCalendar({ targetDate }: CountdownCalendarProps) {
   const formatNumber = (num: number) => num.toString().padStart(2, "0");
 
   return (
-    <div className=" bg-background-secondary/90 rounded-lg shadow-white select-none font-sans">
+    <div className="w-min bg-background-secondary/90 rounded-lg shadow-white select-none font-sans">
       <div className="bg-main-tertiary text-white text-center py-2 rounded-t-lg font-bold text-lg">
         До начала
       </div>
