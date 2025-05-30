@@ -27,8 +27,8 @@ export function Events() {
           <AccordionItem key={e.title} value={e.title}>
             <AccordionTrigger>
               <div className="flex gap-2 items-center">
-                <Icon type={e.icon as IconType} size="md" color="dark" />
-                <span>{e.title}</span>
+                <Icon type={e.icon as IconType} size="md" color="main" />
+                <span className="text-main-secondary">{e.title}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent>
