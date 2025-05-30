@@ -17,7 +17,6 @@ export function Moderators() {
                 className="w-full rounded-t-xl md:rounded-tr-none md:rounded-l-xl object-cover h-full"
               />
               <div className="absolute top-2 left-2 bg-main-secondary/70 text-white rounded-md px-2 py-1 text-sm font-medium">
-                {/* Здесь вы можете вставить текст вашего тега */}
                 {m.tag}
               </div>
             </div>

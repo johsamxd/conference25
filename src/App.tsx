@@ -6,11 +6,12 @@ import {
   Moderators,
   Presidium,
   Program,
-} from "@/pages";
+} from "@/blocks";
 // import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { Partners } from "./blocks/Partners";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Lectors />
             <Moderators />
             <Events />
+            <Partners />
             <Contacts />
             {/* <div className="hidden lg:contents">
               <SplashCursor />
