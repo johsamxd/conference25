@@ -8,15 +8,27 @@ import { useRef } from "react";
 
 const PARTNERS = [
   {
-    image: "/images/partners/etp_gpb.png",
-    link: "https://etpgpb.ru/",
+    image: "/images/partners/fabrikant.png",
+    link: "https://fabrikant.ru/",
+  },
+  {
+    image: "/images/partners/roseltorg.svg",
+    link: "https://roseltorg.ru/",
+  },
+  {
+    image: "/images/partners/rts_tender.svg",
+    link: "https://rts-tender.ru/",
+  },
+  {
+    image: "/images/partners/tek_torg.svg",
+    link: "https://tektorg.ru/",
   },
   {
     image: "/images/partners/fabrikant.png",
     link: "https://fabrikant.ru/",
   },
   {
-    image: "/images/partners/roseltorg.jpg",
+    image: "/images/partners/roseltorg.svg",
     link: "https://roseltorg.ru/",
   },
   {
