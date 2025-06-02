@@ -16,7 +16,7 @@ const PARTNERS = [
     link: "https://roseltorg.ru/",
   },
   {
-    image: "/images/partners/rts_tender.svg",
+    image: "/images/partners/rts_tender.png",
     link: "https://rts-tender.ru/",
   },
   {
@@ -32,7 +32,7 @@ const PARTNERS = [
     link: "https://roseltorg.ru/",
   },
   {
-    image: "/images/partners/rts_tender.svg",
+    image: "/images/partners/rts_tender.png",
     link: "https://rts-tender.ru/",
   },
   {
@@ -58,7 +58,7 @@ export function Partners() {
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center h-[10vh]"
+              className="flex justify-center h-[5vh]"
             >
               <img src={p.image} className="h-full" />
             </a>
