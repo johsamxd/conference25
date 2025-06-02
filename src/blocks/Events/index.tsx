@@ -41,7 +41,7 @@ export function Events() {
                   e.link && "hover:bg-black/10 duration-300"
                 )}
               >
-                <div className="h-[40vh] aspect-[4/3]">
+                <div className="md:h-[40vh] aspect-[4/3]">
                   <img
                     src={e.image}
                     className={
