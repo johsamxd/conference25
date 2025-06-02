@@ -54,6 +54,8 @@ export const IconTypes = [
   "vk",
   "trophy",
   "charts",
+  "wand",
+  "cursor",
 ] as const;
 
 /** Icon types */

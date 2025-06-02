@@ -16,7 +16,10 @@ const PARTNERS = [
     image: "/images/partners/roseltorg.jpg",
   },
   {
-    image: "/images/partners/tek-torg.png",
+    image: "/images/partners/rts_tender.svg",
+  },
+  {
+    image: "/images/partners/tek_torg.svg",
   },
 ];
 
@@ -35,8 +38,8 @@ export function Partners() {
       <CarouselContent className="flex justify-between items-center mt-10">
         {PARTNERS?.map((p, i) => (
           <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
-            <div className="flex justify-center h-[5vh]">
-              <img src={p.image} />
+            <div className="flex justify-center h-[10vh]">
+              <img src={p.image} className="h-full" />
             </div>
           </CarouselItem>
         ))}

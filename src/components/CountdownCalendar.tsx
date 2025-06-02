@@ -47,7 +47,7 @@ export function CountdownCalendar({ targetDate }: CountdownCalendarProps) {
           :{formatNumber(timeLeft.hours)}:{formatNumber(timeLeft.minutes)}:
           {formatNumber(timeLeft.seconds)}
         </div>
-        <div className="text-element-primary text-sm uppercase tracking-wide">
+        <div className="text-element-secondary text-sm uppercase tracking-wide">
           <span className="text-main-tertiary">ДД:</span>ЧЧ:ММ:СС
         </div>
       </div>

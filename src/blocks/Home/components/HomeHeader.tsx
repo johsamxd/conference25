@@ -11,11 +11,15 @@ import { ToggleThemeButton } from "@/components/ToggleThemeButton";
 //   SheetTrigger,
 // } from "@/components/ui/sheet";
 import { Icon } from "@/components/ui/icon";
+import SplashCursor from "@/components/animated/SplashCursor";
+import { useState } from "react";
 
 export function HomeHeader({
   className,
   ...props
 }: React.HTMLProps<HTMLDivElement>) {
+  const [isWand, setIsWand] = useState(true);
+
   return (
     <div
       className={cn("grid grid-cols-3 gap-2.5 items-center  z-10", className)}
@@ -28,6 +32,10 @@ export function HomeHeader({
       </div>
 
       <div className="flex items-center gap-10 lg:gap-20 justify-end">
+        <Button variant="icon" size="icon" onClick={() => setIsWand(!isWand)}>
+          <Icon type={isWand ? "wand" : "cursor"} size="md" color="white" />
+        </Button>
+
         <ToggleThemeButton />
         <div className="flex gap-5 lg:gap-8">
           <a href="https://vk.com/centrzakupok14" target="_blank">
@@ -36,6 +44,11 @@ export function HomeHeader({
           <a href="https://t.me/centerzakupok" target="_blank">
             <Icon type="send" size="md" color="white" />
           </a>
+        </div>
+      </div>
+      <div className={cn("hidden lg:contents")}>
+        <div className={cn("contents", !isWand && "hidden")}>
+          <SplashCursor />
         </div>
       </div>
     </div>
