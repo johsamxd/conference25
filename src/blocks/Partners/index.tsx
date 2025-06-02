@@ -3,7 +3,8 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
+import { useRef } from "react";
 
 const PARTNERS = [
   {
@@ -29,13 +30,11 @@ const PARTNERS = [
 ];
 
 export function Partners() {
+  const plugin = useRef(AutoScroll({ speed: 1, stopOnInteraction: false }));
+
   return (
     <Carousel
-      plugins={[
-        Autoplay({
-          delay: 5000,
-        }),
-      ]}
+      plugins={[plugin.current]}
       opts={{
         loop: true,
       }}
