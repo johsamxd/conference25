@@ -15,13 +15,19 @@ export function Contacts() {
             href="https://2gis.ru/yakutsk/inside/7037510072941119"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-text-alternative duration-200"
           >
             г. Якутск, улица Пояркова, 4
           </a>
           <CopyButton value={"г. Якутск, улица Пояркова, 4"} />
         </div>
         <div className="flex gap-2.5 items-center">
-          <a href="tel:+74112507151" target="_blank" rel="noopener noreferrer">
+          <a
+            href="tel:+74112507151"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-text-alternative duration-200"
+          >
             <span>+7 (4112) 507-151</span>
           </a>
           <CopyButton value={"+74112507151"} />
@@ -31,6 +37,7 @@ export function Contacts() {
             href="mailto:cz@goszakazyakutia.ru"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-text-alternative duration-200"
           >
             <span>cz@goszakazyakutia.ru</span>
           </a>
