@@ -1,8 +1,14 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
-import { Icon } from "./ui/icon";
+import { Icon, type IconColor } from "./ui/icon";
 
-const CopyButton = ({ value }: { value: string }) => {
+const CopyButton = ({
+  value,
+  color = "white",
+}: {
+  value: string;
+  color?: IconColor;
+}) => {
   const [copied, setCopied] = useState(false);
 
   function copy() {
@@ -18,7 +24,7 @@ const CopyButton = ({ value }: { value: string }) => {
       <Icon
         type={copied ? "tick" : "copy"}
         size="sm"
-        color={copied ? "main" : "white"}
+        color={copied ? "main" : color}
         noHover={copied}
       />
     </Button>

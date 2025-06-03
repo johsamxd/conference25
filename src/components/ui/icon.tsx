@@ -56,6 +56,8 @@ export const IconTypes = [
   "charts",
   "wand",
   "cursor",
+  "phone",
+  "mail",
 ] as const;
 
 /** Icon types */

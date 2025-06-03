@@ -1,5 +1,6 @@
 import { Icon } from "@/components/ui/icon";
 import { MODERATORS } from "./data/moderators";
+import { CopyButton } from "@/components/CopyButton";
 
 export function Moderators() {
   return (
@@ -22,14 +23,26 @@ export function Moderators() {
             </div>
             <div className="col-span-2 p-4 text-text-secondary flex flex-col gap-2.5">
               <h3>{m.name}</h3>
-              <div className="flex gap-1 items-center">
-                <Icon type="calendar" size="md" color="dark" />
-                {"*текст*"}
-              </div>
-              <div className="flex gap-1 items-center">
-                <Icon type="calendar" size="md" color="dark" />
-                {"*ссылка*"}
-              </div>
+              <a
+                href={"mailto:" + m.phone_copy}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2 items-center text-text-tertiary"
+              >
+                <Icon type="phone" size="sm" color="dark" />
+                {m.phone}
+                <CopyButton value={m.phone_copy} color="dark" />
+              </a>
+              <a
+                href={"mailto:" + m.mail}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2.5 items-center text-text-tertiary"
+              >
+                <Icon type="mail" size="sm" color="dark" />
+                {m.mail}
+                <CopyButton value={m.mail} color="dark" />
+              </a>
               <span>{m.short_description}</span>
             </div>
           </div>
