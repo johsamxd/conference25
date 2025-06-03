@@ -41,7 +41,40 @@ export const Typewriter = ({ text, homeTitle, delay }: Props) => {
     }, delay);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [delay]);
+
+  const highlightWords = {
+    НАЦИОНАЛЬНО: "text-main-tertiary",
+    ОТВЕТСТВЕННО: "text-main-tertiary",
+    ЭФФЕКТИВНО: "text-[#ff6b6b]",
+  };
+  const getColoredCharacters = () => {
+    const result: { char: string; className?: string; key: string }[] = [];
+
+    let currentIndex = 0;
+
+    const words = text.split(/(\s+|,|!|:)/);
+
+    for (const word of words) {
+      const colorClass =
+        word in highlightWords
+          ? highlightWords[word as keyof typeof highlightWords]
+          : undefined;
+
+      for (let i = 0; i < word.length; i++) {
+        result.push({
+          char: word[i],
+          className: colorClass,
+          key: `${word[i]}-${currentIndex}`,
+        });
+        currentIndex++;
+      }
+    }
+
+    return result;
+  };
+
+  const characters = getColoredCharacters();
 
   if (homeTitle)
     return (
@@ -51,24 +84,15 @@ export const Typewriter = ({ text, homeTitle, delay }: Props) => {
         initial="hidden"
         animate={animateState}
       >
-        {text.split("").map((char, i) => {
-          let color = false;
-          if (i < 3) {
-            color = true;
-          } else if (i >= text.length - 5 && i < text.length - 1) {
-            color = true;
-          }
-
-          return (
-            <motion.span
-              key={`${char}-${i}`}
-              variants={letterVariants}
-              className={cn(color && "text-text-alternative")}
-            >
-              {char}
-            </motion.span>
-          );
-        })}
+        {characters.map(({ char, className, key }) => (
+          <motion.span
+            key={key}
+            variants={letterVariants}
+            className={cn(className)}
+          >
+            {char}
+          </motion.span>
+        ))}
       </motion.h1>
     );
 

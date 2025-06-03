@@ -32,6 +32,7 @@ body {
   --color-text-secondary: #161616;
   --color-text-tertiary: #656565;
   --color-text-alternative: #8df0cc;
+  --color-text-alternative-secondary: #f7e3a1;
   --color-main-primary: #253c78;
   --color-main-secondary: #0c58a6;
   --color-main-tertiary: #598fd9;
@@ -164,7 +165,7 @@ body {
   }
 
   h1 {
-    @apply text-[32px] font-bold leading-[32px] lg:text-[48px] lg:leading-[48px];
+    @apply text-[32px] font-bold leading-[32px] lg:text-[40px] lg:leading-[40px];
   }
 
   h2 {
