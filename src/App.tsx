@@ -7,7 +7,6 @@ import {
   Presidium,
   Program,
 } from "@/blocks";
-// import SplashCursor from "./components/animated/SplashCursor";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -35,9 +34,6 @@ function App() {
             <Events />
             <Partners />
             <Contacts />
-            {/* <div className="hidden lg:contents">
-              <SplashCursor />
-            </div> */}
           </main>
         </ThemeProvider>
       </StorageProvider>

@@ -32,7 +32,12 @@ export function HomeHeader({
       </div>
 
       <div className="flex items-center gap-10 lg:gap-20 justify-end">
-        <Button variant="icon" size="icon" onClick={() => setIsWand(!isWand)}>
+        <Button
+          variant="icon"
+          size="icon"
+          onClick={() => setIsWand(!isWand)}
+          className="hidden lg:contents"
+        >
           <Icon type={isWand ? "wand" : "cursor"} size="md" color="white" />
         </Button>
 
@@ -139,6 +144,13 @@ const HeaderCenter = () => {
       </Button>
       <Button variant="link" size="lg" onClick={() => handleScroll("lectors")}>
         Лекторы
+      </Button>
+      <Button
+        variant="link"
+        size="lg"
+        onClick={() => handleScroll("moderators")}
+      >
+        Модераторы
       </Button>
     </div>
   );
