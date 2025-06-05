@@ -4,7 +4,7 @@ import { PROGRAM } from "./data/program";
 
 export function Program() {
   return (
-    <div id="program" className="pl-2 lg:pl-5 min-h-screen">
+    <div id="program" className="px-2 lg:pl-5 min-h-screen">
       <div className="hidden lg:contents">
         <ProgramMain />
       </div>
@@ -27,10 +27,11 @@ function ProgramMain() {
 
 function ProgramMobile() {
   return (
-    <HorizontalScroll title={"Программа"} range={["0%", "-68%"]}>
+    <div className="flex flex-col gap-10">
+      <h2 className="w-full text-center text-text-primary pt-5">Программа</h2>
       {PROGRAM.map((p, i) => (
         <ProgramBlock key={i} data={p} />
       ))}
-    </HorizontalScroll>
+    </div>
   );
 }

@@ -1,6 +1,8 @@
 import { useScroll, useTransform } from "motion/react";
 import { motion } from "framer-motion";
 import { useRef, type ReactNode } from "react";
+import { Icon } from "./ui/icon";
+import { DisappearingDiv } from "./animated/DisappearingDiv";
 
 export function HorizontalScroll({
   children,
@@ -23,6 +25,18 @@ export function HorizontalScroll({
         <motion.div style={{ x }} className="flex gap-5">
           {children}
         </motion.div>
+        <DisappearingDiv
+          start={2000}
+          end={3600}
+          className="w-full h-full flex flex-col items-center justify-end gap-5 mt-96"
+        >
+          <span className="typo-sub-title text-text-button">
+            Прокрутите вниз
+          </span>
+          <div className="animate-bounce">
+            <Icon type="expand" size="xl" color="white" />
+          </div>
+        </DisappearingDiv>
       </div>
     </div>
   );
