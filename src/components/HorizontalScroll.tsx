@@ -28,7 +28,7 @@ export function HorizontalScroll({
         <DisappearingDiv
           start={2000}
           end={3600}
-          className="w-full h-full flex flex-col items-center justify-end gap-5 mt-96"
+          className="w-full h-full flex flex-col items-center justify-end gap-5 mt-46"
         >
           <span className="typo-sub-title text-text-button">
             Прокрутите вниз
