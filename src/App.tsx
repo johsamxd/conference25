@@ -6,7 +6,6 @@ import {
   Moderators,
   Presidium,
   Program,
-  Registration,
 } from "@/blocks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
