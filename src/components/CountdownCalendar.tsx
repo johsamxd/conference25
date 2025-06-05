@@ -34,13 +34,13 @@ export function CountdownCalendar({ targetDate }: CountdownCalendarProps) {
   const formatNumber = (num: number) => num.toString().padStart(2, "0");
 
   return (
-    <div className="w-min bg-background-secondary/90 rounded-lg shadow-white select-none font-sans">
-      <div className="bg-main-tertiary text-white text-center py-2 rounded-t-lg font-bold text-lg">
+    <div className="w-full bg-background-secondary/90 rounded-lg shadow-white select-none font-sans">
+      <div className="bg-main-tertiary text-white text-center py-2 rounded-t-lg font-bold typo-small-title">
         До начала
       </div>
 
       <div className="p-4 flex flex-col items-center justify-center space-y-2">
-        <div className="text-element-secondary text-4xl font-extrabold tracking-widest">
+        <div className="text-element-secondary typo-title font-extrabold tracking-widest">
           <span className="text-main-tertiary">
             {formatNumber(timeLeft.days)}
           </span>

@@ -1,3 +1,4 @@
+import { Registration } from "@/blocks/Registration";
 import DateContent from "@/components/animated/DateContent";
 import SplitText from "@/components/animated/SplitText";
 import { Typewriter } from "@/components/animated/Typewriter";
@@ -33,13 +34,14 @@ export function HomeCore() {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-10 lg:w-[50vw] lg:items-center">
-        <div className="flex flex-col gap-4 w-full">
-          <div className="flex justify-center">
-            <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} />
-          </div>
+      <div className="flex flex-col gap-10 lg:w-[50vw] lg:items-center justify-center">
+        {/* <div className="flex flex-col gap-10 w-full"> */}
+        {/* <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} /> */}
+        {/* <div className="flex w-full justify-end"> */}
+        <Registration />
+        {/* </div> */}
 
-          <div className="flex flex-col gap-2.5 w-full">
+        {/* <div className="flex flex-col gap-2.5 w-full">
             <h3>Дата:</h3>
             <div className="flex gap-2.5">
               <DateContent /> <SplitText text="июня 2025 года" type="h2" />
@@ -77,16 +79,11 @@ export function HomeCore() {
             </a>
           </div>
           <div className="flex justify-center items-center">
-            <a
-              href="mailto:cz@goszakazyakutia.ru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-min"
-            >
-              <Button className="w-min rounded-2xl mt-2.5">Написать</Button>
+            <a href="#registration" className="w-min">
+              <Button className="w-min rounded-lg mt-2.5">Регистрация</Button>
             </a>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </div>
   );

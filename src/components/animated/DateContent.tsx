@@ -11,7 +11,7 @@ export default function DateContent() {
   }, []);
 
   return (
-    <motion.pre className="text-text-alternative font-sans typo-title">
+    <motion.pre className="text-text-alternative font-sans typo-small-title">
       {rounded}
     </motion.pre>
   );

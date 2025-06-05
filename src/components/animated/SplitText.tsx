@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
@@ -8,9 +9,11 @@ export type TagType = (typeof TagTypes)[number];
 export default function SplitText({
   text,
   type = "p",
+  className,
 }: {
   text: string;
   type?: TagType;
+  className?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -38,11 +41,11 @@ export default function SplitText({
   return (
     <div ref={containerRef}>
       {type == "h1" ? (
-        <h1>{text}</h1>
+        <h1 className={cn(className)}>{text}</h1>
       ) : type == "h2" ? (
-        <h2>{text}</h2>
+        <h2 className={cn(className)}>{text}</h2>
       ) : (
-        <p>{text}</p>
+        <p className={cn(className)}>{text}</p>
       )}
     </div>
   );

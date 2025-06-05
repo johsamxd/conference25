@@ -6,3 +6,4 @@ export { Contacts } from "./Contacts";
 export { Events } from "./Events";
 export { Moderators } from "./Moderators";
 export { Partners } from "./Partners";
+export { Registration } from "./Registration";

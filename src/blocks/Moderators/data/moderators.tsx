@@ -18,7 +18,6 @@ export const MODERATORS = [
     mail: "evseeva.mp@goszakazyakutia.ru",
     tag: "223-ФЗ",
     image: "/images/moderators/evseeva.jpg",
-    short_description:
-      "начальник отдела по работе с отдельными юридическими лицами",
+    short_description: "начальник отдела закупок для отдельных юридических лиц",
   },
 ];
