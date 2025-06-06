@@ -1,4 +1,5 @@
 import Progress from "@/components/ui/progress";
+import { cn } from "@/lib/utils";
 
 interface Props {
   data: any;
@@ -6,7 +7,11 @@ interface Props {
 
 export function ProgramBlock({ data }: Props) {
   return (
-    <div className="w-full lg:w-[50vw] p-6 rounded-3xl flex flex-col gap-5 bg-background-primary/95 hover:bg-background-primary duration-300 shadow-white">
+    <div
+      className={cn(
+        "w-full p-6 rounded-3xl flex flex-col gap-5 bg-background-primary/95 hover:bg-background-primary duration-300 shadow-white"
+      )}
+    >
       <div className="flex flex-col gap-1">
         <h3 className="text-text-secondary">{data.title}</h3>
         {data?.moderator && (

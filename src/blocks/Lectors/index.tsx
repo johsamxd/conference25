@@ -18,9 +18,9 @@ export function Lectors() {
   };
 
   return (
-    <div id="lectors" className="flex flex-col gap-10 px-4">
+    <div id="lectors" className="flex flex-col gap-10 px-2 lg:px-10">
       <h2 className="w-full text-center text-text-primary">Лекторы</h2>
-      <div className="p-5 rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-5">
+      <div className="rounded-2xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-5">
         {LECTORS.map((l, i) => (
           <PersonCard key={i} person={l} onOpen={() => handleOpen(l)} />
         ))}
