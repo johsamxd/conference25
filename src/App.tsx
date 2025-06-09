@@ -6,6 +6,7 @@ import {
   Moderators,
   Presidium,
   Program,
+  Questions,
 } from "@/blocks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
@@ -32,7 +33,7 @@ function App() {
             <Lectors />
             <Moderators />
             <Events />
-            {/* <Registration /> */}
+            <Questions />
             <Partners />
             <Contacts />
           </main>
