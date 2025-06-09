@@ -33,7 +33,7 @@ export function QuestionForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-5 border-2 border-background-primary p-5 rounded-2xl"
+      className="flex flex-col gap-5 border-2 border-white p-5 rounded-2xl"
     >
       <h2 className="text-center text-text-alternative">Задать вопрос</h2>
       <div className="flex flex-col">
@@ -41,7 +41,7 @@ export function QuestionForm() {
         <select
           id="name"
           name="name"
-          className="bg-background-primary rounded-2xl h-10 text-text-secondary p-2"
+          className="bg-white rounded-lg h-10 text-black p-2 border-2 border-white focus:outline-none focus:border-element-primary"
           value={selectedName}
           onChange={(e) => setSelectedName(e.target.value)}
           required
@@ -61,12 +61,16 @@ export function QuestionForm() {
         <textarea
           id="question"
           name="question"
-          className="bg-background-primary rounded-2xl h-40 text-text-secondary px-2.5 focus:border-0 focus-visible:border-0"
+          className="bg-white rounded-lg h-40 text-text-secondary px-2.5 border-2 border-background-tertiary focus:outline-none focus:border-element-primary"
           required
         />
       </div>
 
-      <Button className="mt-5" type="submit" disabled={!selectedName}>
+      <Button
+        className="mt-5 bg-white border-transparent"
+        type="submit"
+        disabled={!selectedName}
+      >
         Отправить
       </Button>
     </form>

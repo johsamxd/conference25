@@ -7,12 +7,12 @@ import { Icon } from "@/components/ui/icon";
 export function Registration() {
   return (
     <div className="flex w-full">
-      <div className="border-2 rounded-2xl flex flex-col">
-        <h2 className="bg-background-primary w-full p-5 rounded-t-xl text-main-secondary text-center">
+      <div className="border-2 border-white rounded-2xl flex flex-col">
+        <h2 className="bg-white w-full p-5 rounded-t-xl text-main-secondary text-center">
           Регистрация на конференцию
         </h2>
         <div className="flex flex-col  md:flex-row">
-          <div className="flex flex-col gap-5 py-2 px-4 border-r-2 justify-center">
+          <div className="flex flex-col gap-5 py-2 px-4 border-r-2 border-white justify-center">
             <CountdownCalendar targetDate={new Date(2025, 5, 27, 9, 0, 0)} />
             <div className="flex flex-col gap-2.5 items-center text-center">
               <p className="typo-sub-title text-text-alternative">
@@ -72,7 +72,7 @@ export function Registration() {
             </div>
 
             <a href="#" id="timepad_twf_register_3404754" className="w-full">
-              <Button className="rounded-lg w-full mb-2.5">
+              <Button className="rounded-lg w-full mb-2.5 bg-white border-transparent">
                 Пройти регистрацию
               </Button>
             </a>
