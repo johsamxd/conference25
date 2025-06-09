@@ -1,11 +1,14 @@
 import { LECTORS } from "@/blocks/Lectors/data/lectors";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { toast } from "sonner";
 
 export function QuestionForm() {
+  const [isLoading, setIsLoading] = useState(false);
   const [selectedName, setSelectedName] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    setIsLoading(true);
     e.preventDefault();
     const form = e.currentTarget;
     const question = (form.elements.namedItem("question") as HTMLInputElement)
@@ -24,8 +27,9 @@ export function QuestionForm() {
       )}&Question=${encodeURIComponent(question)}`,
     })
       .then((res) => res.text())
-      .then((data) => {
-        alert(data);
+      .then(() => {
+        toast.success("Ваш вопрос успешно отправлен!");
+        setIsLoading(false);
       })
       .catch((error) => console.log(error));
   };
@@ -61,7 +65,7 @@ export function QuestionForm() {
         <textarea
           id="question"
           name="question"
-          className="bg-white rounded-lg h-40 text-text-secondary px-2.5 border-2 border-background-tertiary focus:outline-none focus:border-element-primary"
+          className="bg-white rounded-lg h-40 text-black px-2.5 border-2 border-background-tertiary focus:outline-none focus:border-element-primary"
           required
         />
       </div>
@@ -69,7 +73,8 @@ export function QuestionForm() {
       <Button
         className="mt-5 bg-white border-transparent"
         type="submit"
-        disabled={!selectedName}
+        disabled={!selectedName || isLoading}
+        loading={isLoading}
       >
         Отправить
       </Button>

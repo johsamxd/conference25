@@ -12,6 +12,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { Partners } from "./blocks/Partners";
+import { Toaster } from "@/components/ui/sonner";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Partners />
             <Contacts />
           </main>
+          <Toaster />
         </ThemeProvider>
       </StorageProvider>
     </QueryClientProvider>
