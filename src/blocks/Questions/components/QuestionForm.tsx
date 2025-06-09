@@ -12,10 +12,13 @@ export function QuestionForm() {
       .value;
 
     const url =
-      "https://script.google.com/macros/s/AKfycbwhJMQSvHAI6TouMt_P3tEWMo18B7xU6Abq30zftuGZMJkOVn31fQfBTpI5feKeSRV5/exec";
+      "https://script.google.com/macros/s/AKfycbyx1TO9fkMY__NQpE3ymBzcNCuzkzZb2T04teTOGFpCa-jmG7gE53_YguvWBpKFiE7N/exec";
     fetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
       body: `Name=${encodeURIComponent(
         selectedName
       )}&Question=${encodeURIComponent(question)}`,
@@ -55,10 +58,10 @@ export function QuestionForm() {
       </div>
       <div className="flex flex-col">
         <label htmlFor="question">Вопрос</label>
-        <input
+        <textarea
           id="question"
           name="question"
-          className="bg-background-primary rounded-2xl h-10 text-text-secondary px-2.5"
+          className="bg-background-primary rounded-2xl h-40 text-text-secondary px-2.5 focus:border-0 focus-visible:border-0"
           required
         />
       </div>
