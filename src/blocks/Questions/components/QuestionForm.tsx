@@ -65,6 +65,7 @@ export function QuestionForm() {
         <textarea
           id="question"
           name="question"
+          maxLength={2500}
           className="bg-white rounded-lg h-40 text-black px-2.5 border-2 border-background-tertiary focus:outline-none focus:border-element-primary"
           required
         />
