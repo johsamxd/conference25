@@ -9,18 +9,6 @@ export function Contacts() {
           <span>ГКУ РС(Я) «Центр закупок РС(Я)»</span>
           <CopyButton value={"ГКУ РС(Я) «Центр закупок РС(Я)»"} />
         </div>
-
-        <div className="flex gap-2.5 items-center">
-          <a
-            href="https://2gis.ru/yakutsk/inside/7037510072941119"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-text-alternative duration-200"
-          >
-            г. Якутск, улица Пояркова, 4
-          </a>
-          <CopyButton value={"г. Якутск, улица Пояркова, 4"} />
-        </div>
         <div className="flex gap-2.5 items-center">
           <a
             href="tel:+74112507151"
