@@ -5,38 +5,29 @@ export const PRESIDIUMS = [
     image: "/images/presidium/popov.jpeg",
     short_description: "министр экономики Республики Саха (Якутия)",
   },
-
   {
     id: "presidium2",
+    name: "Алексеев Иван Иванович",
+    image: "/images/presidium/alekseev.jpeg",
+    short_description: "и.о. министра финансов Республики Саха (Якутия)",
+  },
+  {
+    id: "presidium3",
     name: "Неустроева Алена Петровна",
     image: "/images/presidium/neustroeva.jpg",
     short_description: "директор ГКУ РС(Я) «Центр закупок РС(Я)»",
   },
   {
-    id: "presidium3",
+    id: "presidium4",
     name: "Тихомиров Павел Анатольевич",
     image: "/images/presidium/tihomirov.jpg",
     short_description: "генеральный директор Союза закупщиков",
   },
   {
-    id: "presidium4",
-    name: "Боровых Юлия Сергеевна",
-    image: "/images/lectors/borovih.jpeg",
-    short_description:
-      "эксперт, преподаватель с высшим педагогическим образованием, председатель Общественного совета при Пермском УФАС России, общественный помощник уполномоченного по защите прав предпринимателей в Пермском крае, директор ООО «Факультет образовательных технологий»",
-  },
-  {
     id: "presidium5",
-    name: "Цакоев Хетаг Валерьевич",
-    image: "/images/lectors/cakoev.jpeg",
+    name: "Павлов Герасим Николаевич",
+    image: "/images/presidium/pavlov.jpeg",
     short_description:
-      "заместитель начальника Управления контроля размещения государственного заказа ЦА ФАС России",
-  },
-  {
-    id: "presidium6",
-    name: "Вергунова Ольга Викторовна",
-    image: "/images/lectors/vergunova.jpeg",
-    short_description:
-      "руководитель Департамента методологии и обучения ЭТП «Фабрикант», эксперт в сфере закупок",
+      "первый проректор по экономике Федерального государственного автономного образовательного учреждения высшего образования «Северо-Восточный федеральный университет имени Максима Кировича Аммосова»",
   },
 ];
