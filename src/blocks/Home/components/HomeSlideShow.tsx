@@ -6,14 +6,14 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 const PICTURES = [
-  "/images/home/1.PNG",
-  "/images/home/2.PNG",
-  "/images/home/3.PNG",
-  "/images/home/4.PNG",
-  "/images/home/5.PNG",
-  "/images/home/6.PNG",
-  "/images/home/7.PNG",
-  "/images/home/8.PNG",
+  "/images/home/1.png",
+  "/images/home/2.png",
+  "/images/home/3.png",
+  "/images/home/4.png",
+  "/images/home/5.png",
+  "/images/home/6.png",
+  "/images/home/7.png",
+  "/images/home/8.png",
 ];
 
 export function HomeSlideShow() {
