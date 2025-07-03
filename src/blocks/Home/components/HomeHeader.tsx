@@ -152,6 +152,13 @@ const HeaderCenter = () => {
       >
         Модераторы
       </Button>
+      <Button
+        variant="link"
+        size="lg"
+        onClick={() => handleScroll("materials")}
+      >
+        Материалы
+      </Button>
     </div>
   );
 };

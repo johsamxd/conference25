@@ -31,15 +31,7 @@ export function Events() {
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <a
-                href={e.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  "md:flex gap-5 mb-2.5 rounded-md",
-                  e.link && "hover:bg-black/10 duration-300"
-                )}
-              >
+              <div className={cn("md:flex gap-5 mb-2.5 rounded-md")}>
                 <div className="md:h-[40vh] aspect-[4/3]">
                   <img
                     src={e.image}
@@ -56,8 +48,29 @@ export function Events() {
                       <span key={i}>{d}</span>
                     ))}
                   </div>
+                  <div className="flex gap-5 justify-end text-main-secondary font-semibold ">
+                    <a
+                      href={e.post_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-main-tertiary"
+                    >
+                      Итоги
+                    </a>
+                    <a
+                      href={e.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cn(
+                        " hidden",
+                        e.link && "contents hover:text-main-tertiary"
+                      )}
+                    >
+                      Страница
+                    </a>
+                  </div>
                 </div>
-              </a>
+              </div>
             </AccordionContent>
           </AccordionItem>
         ))}

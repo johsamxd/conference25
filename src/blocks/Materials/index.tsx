@@ -48,7 +48,10 @@ const MATERIALS = [
 
 export function Materials() {
   return (
-    <div className="flex flex-col gap-5 w-full px-5 lg:px-10  pt-5 pb-10 bg-background-primary/90 text-text-secondary">
+    <div
+      id="materials"
+      className="flex flex-col gap-5 w-full px-5 lg:px-10  pt-5 pb-10 bg-background-primary/90 text-text-secondary"
+    >
       <div className="flex flex-col gap-2.5">
         <h2 className="text-center text-main-secondary">Материалы</h2>
         <p className="typo-sub-title text-center text-text-tertiary">

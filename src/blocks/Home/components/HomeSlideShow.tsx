@@ -31,7 +31,7 @@ export function HomeSlideShow() {
       orientation="vertical"
       className="w-full"
     >
-      <CarouselContent className="-mt-1 h-[80vh] w-full">
+      <CarouselContent className="-mt-1 h-[60vh] w-full">
         {PICTURES.map((p, i) => (
           <CarouselItem key={i} className="pt-1">
             <div className="flex justify-center items-center h-full">
