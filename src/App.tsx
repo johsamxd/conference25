@@ -3,10 +3,11 @@ import {
   Events,
   Home,
   Lectors,
+  Materials,
   Moderators,
   Presidium,
   Program,
-  Questions,
+  // Questions,
 } from "@/blocks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StorageProvider } from "./contexts/StorageContext";
@@ -34,7 +35,8 @@ function App() {
             <Lectors />
             <Moderators />
             <Events />
-            <Questions />
+            <Materials />
+            {/* <Questions /> */}
             <Partners />
             <Contacts />
           </main>

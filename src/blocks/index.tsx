@@ -8,3 +8,4 @@ export { Moderators } from "./Moderators";
 export { Partners } from "./Partners";
 export { Registration } from "./Registration";
 export { Questions } from "./Questions";
+export { Materials } from "./Materials";

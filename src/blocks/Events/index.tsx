@@ -19,8 +19,7 @@ export function Events() {
         </p>
       </div>
       <Accordion
-        type="single"
-        collapsible
+        type="multiple"
         className="w-full bg-background-secondary px-4 rounded-lg"
       >
         {EVENTS.map((e) => (

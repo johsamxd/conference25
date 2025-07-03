@@ -1,4 +1,4 @@
-import { Registration } from "@/blocks/Registration";
+// import { Registration } from "@/blocks/Registration";
 import SplitText from "@/components/animated/SplitText";
 import { Typewriter } from "@/components/animated/Typewriter";
 
@@ -31,7 +31,7 @@ export function HomeCore() {
         </div>
       </div>
       <div className="flex flex-col gap-10 lg:w-[50vw] lg:items-center justify-center">
-        <Registration />
+        {/* <Registration /> */}
       </div>
     </div>
   );
