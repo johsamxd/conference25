@@ -41,7 +41,7 @@ const PARTNERS = [
   },
 ];
 
-export function Partners() {
+export default function Partners() {
   const plugin = useRef(AutoScroll({ speed: 1, stopOnInteraction: false }));
 
   return (

@@ -4,7 +4,7 @@ import { CountdownCalendar } from "@/components/CountdownCalendar";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
 
-export function Registration() {
+export default function Registration() {
   return (
     <div className="flex w-full">
       <div className="border-2 border-white rounded-2xl flex flex-col">

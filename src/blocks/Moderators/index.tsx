@@ -2,7 +2,7 @@ import { Icon } from "@/components/ui/icon";
 import { MODERATORS } from "./data/moderators";
 import { CopyButton } from "@/components/CopyButton";
 
-export function Moderators() {
+export default function Moderators() {
   return (
     <div id="moderators" className="flex flex-col gap-10  px-2 lg:px-10 pt-4">
       <h2 className="w-full text-center text-text-primary">Модераторы</h2>

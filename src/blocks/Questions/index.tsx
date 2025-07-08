@@ -1,6 +1,6 @@
 import { QuestionForm } from "./components/QuestionForm";
 
-export function Questions() {
+export default function Questions() {
   return (
     <div className="grid lg:grid-cols-2 p-5 gap-10">
       <div className="flex items-center justify-center">

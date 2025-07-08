@@ -1,7 +1,7 @@
 import { PRESIDIUMS } from "./data/presidiums";
 import { PersonCard } from "@/components/PersonCard";
 
-export function Presidium() {
+export default function Presidium() {
   return (
     <div id="presidium" className="flex flex-col gap-10 px-2 lg:px-10">
       <h2 className="w-full text-center text-text-primary">Президиум</h2>

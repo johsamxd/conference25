@@ -8,7 +8,7 @@ import { Icon, type IconType } from "@/components/ui/icon";
 import { EVENTS } from "./data/events";
 import { cn } from "@/lib/utils";
 
-export function Events() {
+export default function Events() {
   return (
     <div
       id="events"

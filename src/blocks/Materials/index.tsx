@@ -46,7 +46,7 @@ const MATERIALS = [
   },
 ];
 
-export function Materials() {
+export default function Materials() {
   return (
     <div
       id="materials"

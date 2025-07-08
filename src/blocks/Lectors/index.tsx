@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PersonCard } from "@/components/PersonCard";
 import { PersonModal } from "@/components/PersonModal";
 
-export function Lectors() {
+export default function Lectors() {
   const [isOpen, setIsOpen] = useState<any>(null);
   const [lector, setLector] = useState<any>(null);
 

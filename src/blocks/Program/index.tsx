@@ -1,7 +1,7 @@
 import { ProgramBlock } from "./components/ProgramBlock";
 import { PROGRAM } from "./data/program";
 
-export function Program() {
+export default function Program() {
   return (
     <div id="program" className="px-2 lg:px-10 min-h-screen">
       <div className="flex flex-col gap-10">
