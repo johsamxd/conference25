@@ -6,7 +6,7 @@ import {
   Materials,
   Moderators,
   Presidium,
-  Program,
+  // Program,
   // Questions,
 } from "@/blocks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -30,12 +30,12 @@ function App() {
         <ThemeProvider>
           <main className="animated-gradient py-2.5 flex flex-col gap-20">
             <Home />
-            <Program />
+            <Materials />
+            <Events />
+            {/* <Program /> */}
             <Presidium />
             <Lectors />
             <Moderators />
-            <Events />
-            <Materials />
             {/* <Questions /> */}
             <Partners />
             <Contacts />

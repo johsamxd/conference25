@@ -132,15 +132,25 @@ export function HomeHeader({
 const HeaderCenter = () => {
   return (
     <div className="w-full justify-center mr-14 hidden md:flex">
-      <Button variant="link" size="lg" onClick={() => handleScroll("program")}>
+      {/* <Button variant="link" size="lg" onClick={() => handleScroll("program")}>
         Программа
+      </Button> */}
+      <Button
+        variant="link"
+        size="lg"
+        onClick={() => handleScroll("materials")}
+      >
+        Материалы
+      </Button>
+      <Button variant="link" size="lg" onClick={() => handleScroll("events")}>
+        Мероприятия
       </Button>
       <Button
         variant="link"
         size="lg"
         onClick={() => handleScroll("presidium")}
       >
-        Список президиумов
+        Президиум
       </Button>
       <Button variant="link" size="lg" onClick={() => handleScroll("lectors")}>
         Лекторы
@@ -151,13 +161,6 @@ const HeaderCenter = () => {
         onClick={() => handleScroll("moderators")}
       >
         Модераторы
-      </Button>
-      <Button
-        variant="link"
-        size="lg"
-        onClick={() => handleScroll("materials")}
-      >
-        Материалы
       </Button>
     </div>
   );
