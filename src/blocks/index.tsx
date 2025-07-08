@@ -1,6 +1,6 @@
 import { lazy } from "react";
 
-// export { Home } from "./Home";
+import Home from "./Home";
 // export { Program } from "./Program";
 // export { Presidium } from "./Presidium";
 // export { Lectors } from "./Lectors";
@@ -12,7 +12,7 @@ import { lazy } from "react";
 // export { Questions } from "./Questions";
 // export { Materials } from "./Materials";
 
-const Home = lazy(() => import("./Home"));
+// const Home = lazy(() => import("./Home"));
 const Materials = lazy(() => import("./Materials"));
 const Events = lazy(() => import("./Events"));
 const Presidium = lazy(() => import("./Presidium"));
